@@ -9,15 +9,17 @@ public class Ship : MonoBehaviour
 	{
 		rigidbody = GetComponent<Rigidbody2D> ();	
 	}
-	
-	void Update () 
-	{
 
-	}
+    private void update()
+    {
+
+    }
+	
 
 	private void LookTowards (Vector2 direction)
 	{
 		
 		transform.localRotation = Quaternion.LookRotation (Vector3.forward, direction);
-	}
+     
+    }
 }
